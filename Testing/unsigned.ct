@@ -1,0 +1,14 @@
+--TEST--
+-funsigned-char compiler option - basic test for gcc
+--FILE--
+#include<stdio.h>
+
+int main(void)
+{
+  char c = -10;
+  // Print the string
+   printf("\n The Geek Stuff [%d]\n", c);
+   return 0;
+}
+--EXPECT--
+The Geek Stuff [ positive number ] 
